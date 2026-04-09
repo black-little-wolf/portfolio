@@ -1,0 +1,101 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-inter text-gray-900 dark:text-dark-text bg-white dark:bg-dark-background transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 md:py-24;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-md font-medium transition-all duration-300 hover:bg-primary-700 hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-white dark:bg-dark-card text-primary border border-primary px-6 py-3 rounded-md font-medium transition-all duration-300 hover:bg-primary/5 active:scale-95;
+  }
+  
+  .nav-link {
+    @apply relative text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-300;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+  
+  .nav-link.active {
+    @apply text-primary;
+  }
+  
+  .skill-bar {
+    @apply h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden;
+  }
+  
+  .skill-progress {
+    @apply h-full bg-primary rounded-full transition-all duration-1000 ease-out;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    @apply absolute left-0 top-0 w-4 h-4 bg-primary rounded-full -translate-x-1/2 border-4 border-white dark:border-dark-card;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    @apply absolute left-0 top-4 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-700 -translate-x-1/2;
+  }
+  
+  .timeline-item:last-child::after {
+    @apply hidden;
+  }
+}
