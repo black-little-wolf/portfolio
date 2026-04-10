@@ -4,7 +4,7 @@ const projects = [
     description: "AI生成、响应式个人作品集网站，展示个人项目和技能。使用HTML、CSS和JavaScript实现，支持响应式设计。",
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     category: "web",
-    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20personal%20portfolio%20website%20design&image_size=landscape_4_3",
+    image: "images/projects/portfolio.png",
     live: "https://black-little-wolf.github.io/portfolio/"
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     description: "内部任务中台系统，允许管理员在后台动态配置页面结构和自定义字段，前端根据配置实时渲染出对应的数据录入、展示与查询界面。同时，系统支持数据的导入、导出及高级查询，适用于需要频繁调整业务字段、快速搭建数据管理页面的场景。",
     tech: ["SpringBoot", "SpringCloudAlibaba", "MyBatis-plus", "MySQL", "Redis", "XXL-JOB"],
     category: "app",
-    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=weather%20app%20interface&image_size=portrait_4_3",
+    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=task%20management%20platform%20dashboard&image_size=landscape_4_3",
     live: "#"
   },
   {
@@ -29,15 +29,15 @@ const projects = [
     description: "内部CRM系统，需支持不同销售部门的客户字段、权限、审批流程差异化，要求快速配置、无需频繁发版。",
     tech: ["SpringBoot", "SpringCloudAlibaba", "MyBatis-plus", "MySQL", "Redis", "XXL-JOB"],
     category: "web",
-    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=blog%20website%20design&image_size=landscape_4_3",
+    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CRM%20customer%20relationship%20management%20dashboard&image_size=landscape_4_3",
     live: "#"
   },
   {
     title: "数据可视化仪表盘",
-    description: "一个数据可视化仪表盘，展示各种数据图表和统计信息。使用ECharts可视化库实现。",
-    tech: ["HTML5", "CSS3", "JavaScript", "ECharts"],
+    description: "一个数据可视化仪表盘，展示各种数据图表和统计信息。采用前后端分离架构，前端使用Vue.js框架，后端提供RESTful API，使用ECharts可视化库实现丰富的图表展示。",
+    tech: ["Vue.js", "Element UI", "SpringBoot", "MySQL", "ECharts"],
     category: "app",
-    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20visualization%20dashboard&image_size=landscape_4_3",
+    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20visualization%20dashboard%20with%20multiple%20charts&image_size=landscape_4_3",
     live: "#"
   }
 ];
