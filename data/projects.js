@@ -17,15 +17,7 @@ const projects = [
     live: "#",
     github: "#"
   },
-  {
-    title: "移动应用设计",
-    description: "一款移动应用的UI/UX设计，注重用户体验和界面美观。使用Figma设计工具创建。",
-    tech: ["Figma", "UI/UX Design", "Mobile Design"],
-    category: "design",
-    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20ui%20design&image_size=portrait_4_3",
-    live: "#",
-    github: "#"
-  },
+
   {
     title: "天气应用",
     description: "一个实时天气应用，显示当前天气和未来预报。使用API获取天气数据。",
