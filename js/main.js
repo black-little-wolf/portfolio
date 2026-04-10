@@ -146,35 +146,7 @@ function initFilterFunctionality() {
   }
 }
 
-// 技能条动画
-const skillBars = document.querySelectorAll('.skill-bar');
 
-function animateSkillBars() {
-  skillBars.forEach(bar => {
-    const width = bar.getAttribute('data-width');
-    bar.style.width = width;
-  });
-}
-
-// 滚动触发动画
-const observerOptions = {
-  threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      if (entry.target.classList.contains('skills')) {
-        animateSkillBars();
-      }
-    }
-  });
-}, observerOptions);
-
-const skillsSection = document.querySelector('.skills');
-if (skillsSection) {
-  observer.observe(skillsSection);
-}
 
 // 表单提交功能
 const contactForm = document.querySelector('.contact-form form');
@@ -247,14 +219,11 @@ function generateSkills() {
     
     categoryElement.innerHTML = `
       <h3>${category.name}</h3>
-      ${category.items.map(item => `
-        <div class="skill-item">
-          <h4>${item.name} <span>${item.level}%</span></h4>
-          <div class="skill-progress">
-            <div class="skill-bar" data-width="${item.level}%"></div>
-          </div>
-        </div>
-      `).join('')}
+      <ul class="skill-list">
+        ${category.items.map(item => `
+          <li>${item}</li>
+        `).join('')}
+      </ul>
     `;
     
     skillsContainer.appendChild(categoryElement);

@@ -1,46 +1,57 @@
 const skills = [
   {
-    name: "前端开发",
+    name: "Java核心",
     items: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 90 },
-      { name: "JavaScript", level: 85 },
-      { name: "React", level: 80 },
-      { name: "Vue", level: 75 },
-      { name: "TypeScript", level: 70 }
+      "具备扎实的Java基础",
+      "熟悉集合框架",
+      "熟悉多线程技术",
+      "熟悉JVM内存模型",
+      "熟悉类加载机制"
     ]
   },
   {
-    name: "设计技能",
+    name: "Spring生态",
     items: [
-      { name: "UI/UX设计", level: 85 },
-      { name: "Figma", level: 90 },
-      { name: "Adobe XD", level: 80 },
-      { name: "Photoshop", level: 75 },
-      { name: "Illustrator", level: 70 },
-      { name: "原型设计", level: 85 }
+      "熟练掌握Spring Boot",
+      "熟练掌握MyBatis-Plus",
+      "熟悉Spring Cloud微服务相关组件",
+      "能独立开发后端项目"
     ]
   },
   {
-    name: "后端开发",
+    name: "数据库",
     items: [
-      { name: "Node.js", level: 75 },
-      { name: "Express", level: 70 },
-      { name: "MongoDB", level: 65 },
-      { name: "SQL", level: 60 },
-      { name: "Python", level: 65 },
-      { name: "RESTful APIs", level: 75 }
+      "熟悉MySQL数据库设计",
+      "熟悉SQL优化",
+      "能利用EXPLAIN分析执行计划",
+      "熟悉Redis",
+      "熟悉RabbitMQ",
+      "实践过分布式锁、延迟队列"
     ]
   },
   {
-    name: "工具与其他",
+    name: "设计与架构",
     items: [
-      { name: "Git", level: 85 },
-      { name: "GitHub", level: 90 },
-      { name: "VS Code", level: 95 },
-      { name: "npm/yarn", level: 80 },
-      { name: "Responsive Design", level: 90 },
-      { name: "SEO", level: 75 }
+      "熟悉常见的GOF设计模式",
+      "通过策略、模板方法重构复杂业务逻辑"
+    ]
+  },
+  {
+    name: "监控与运维",
+    items: [
+      "熟悉Prometheus + Grafana监控体系",
+      "能通过SkyWalking进行分布式链路追踪",
+      "利用ELK进行日志分析",
+      "熟悉常见Linux命令",
+      "可以编写Shell脚本完成项目的日常发布"
+    ]
+  },
+  {
+    name: "开发模式与工具",
+    items: [
+      "熟悉Vibe Coding",
+      "熟悉SDD编程模式",
+      "可以通过Trae等工具驱动AI完成项目开发"
     ]
   }
 ];

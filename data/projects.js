@@ -5,16 +5,16 @@ const projects = [
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     category: "web",
     image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20personal%20portfolio%20website%20design&image_size=landscape_4_3",
-    live: "#",
-    github: "#"
+    live: "https://black-little-wolf.github.io/portfolio/",
+    github: "https://github.com/black-little-wolf/portfolio"
   },
   {
     title: "电商网站",
-    description: "一个完整的电商网站，包含产品展示、购物车和结账功能。使用现代前端技术栈实现。",
-    tech: ["HTML5", "CSS3", "JavaScript", "React"],
+    description: "围绕医疗器械的流通展开，打通上下游产业链，为医疗器械生产厂家、经销商、医疗机构等多方主体提 供全方位服务。涵盖订单处理、进销存管理、渠道运营优化、供应链高效管理、院外协同以及院内服务等多个关键领域，旨在满足不同用户在医疗器械业务流程中的多样化需求，提升整个医疗器械行业的运营效率和协同水平。",
+    tech: ["Spring Boot", "SpringCloudAlibaba", "MyBatis", "MySQL", "RabbitMQ", "Redis", "XXL-JOB"],
     category: "web",
-    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=e-commerce%20website%20design&image_size=landscape_4_3",
-    live: "#",
+    image: "images/projects/mall.png",
+    live: "https://m.met-ec.com/#/login",
     github: "#"
   },
 
